@@ -8,6 +8,3 @@ exports.inversion = function(obj) {
     }
   }
 }
-
-
-// global.eventEmitter.on('transform', module.exports = inversion);

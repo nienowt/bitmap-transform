@@ -1,5 +1,6 @@
 'use strict';
   const transform = require(__dirname + '/bitmapTransform.js');
+  const write = require(__dirname + '/fileRead.js');
 
   const newBitmap = function(bitmap) {
   var bitmapData = {};
@@ -15,6 +16,7 @@
       console.dir('old '+bitmapData.bitmap[i]);
     }
     transform.inversion(bitmapData);
+    write.fileWrite('inverted.bmp',bitmapData.bitmap);
     for(var i= 90; i< 100; i++) {
       console.dir('new '+bitmapData.bitmap[i]);
     }
