@@ -2,9 +2,9 @@
 
 const event = require('events').EventEmitter;
 global.eventEmitter = new event();
-const file = require(__dirname + '/fileRead.js');
-const transf = require(__dirname + '/bitmapTransform.js');
-const data = require(__dirname + '/bitmap-data.js');
+const file = require(__dirname + '/lib/fileRead.js');
+const transf = require(__dirname + '/lib/bitmapTransform.js');
+const data = require(__dirname + '/lib/bitmap-data.js');
 
 
 file.fileRead();
