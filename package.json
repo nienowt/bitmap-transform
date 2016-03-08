@@ -22,6 +22,9 @@
   },
   "author": "Nienowt",
   "license": "ISC",
+  "bin": {
+    "transform": "./eventControl.js"
+  },
   "bugs": {
     "url": "https://github.com/nienowt/bitmap-transform/issues"
   },
