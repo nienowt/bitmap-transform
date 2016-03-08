@@ -1,0 +1,29 @@
+{
+  "name": "bitmap-transform",
+  "version": "1.0.0",
+  "description": "Performs basic color transformations on bitmap images",
+  "main": "eventControl.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node eventControl.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nienowt/bitmap-transform.git"
+  },
+  "author": "Nienowt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nienowt/bitmap-transform/issues"
+  },
+  "homepage": "https://github.com/nienowt/bitmap-transform#readme"
+}

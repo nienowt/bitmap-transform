@@ -2,13 +2,13 @@
 
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
-// var mocha = require('gulp-mocha');
+var mocha = require('gulp-mocha');
 var paths = ['*.js', 'lib/*.js', 'test/test.js'];
 
 gulp.task('default', ['watch']);
 
 gulp.task('watch', function() {
-  gulp.watch(paths,['lint']);
+  gulp.watch(paths,['lint', 'mocha']);
 });
 
 gulp.task('lint', function(){
@@ -53,4 +53,9 @@ gulp.task('lint', function(){
     'extends': 'eslint:recommended'
   }))
   .pipe(eslint.format());
+});
+
+gulp.task('mocha', function() {
+  return gulp.src('test/test.js', {read: false})
+  .pipe(mocha({reporter: 'progress'}));
 });
